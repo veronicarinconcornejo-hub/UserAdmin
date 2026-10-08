@@ -1,0 +1,68 @@
+{
+  "info": {
+    "_postman_id": "4d8da8f7-a92c-44cb-b6bb-05e4167a8179",
+    "name": "UserAdmin",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "20567812"
+  },
+  "item": [
+    {
+      "name": "http://localhost:8080/usuarios",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Fernanda Lopez\",\r\n  \"email\": \"fernandaLopez@correo.com\",\r\n  \"birthdate\": \"1995-04-20\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/usuarios",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "usuarios"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8080/usuarios/1/habilitar",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Fernanda Lopez\",\r\n  \"email\": \"fernandaLopez@correo.com\",\r\n  \"birthdate\": \"1995-04-20\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/usuarios/1/habilitar",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "usuarios",
+            "1",
+            "habilitar"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
